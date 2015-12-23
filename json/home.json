@@ -1,0 +1,15 @@
+[
+    {
+        "tplName": "shophead",
+        "tplInfo": {
+            "style": "default",
+            "name": "无忧购物",
+            "bg": "images/head-bg.jpg",
+            "logo": "images/itme-logo.jpg",
+            "all": 68,
+            "new": 28,
+            "order": 2
+        }
+    }
+]
+

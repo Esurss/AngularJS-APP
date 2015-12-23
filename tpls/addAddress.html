@@ -1,0 +1,100 @@
+<div class="add-address-wrap" style="min-height:30rem;position: relative; background-color:rgba(0,0,0,.8)">
+    <form class="add-address-box pop-box">
+        <div class="pop-box-close"><span class="glyphicon glyphicon-close-icon"></span></div>
+        <h4 class="pop-box-header">收货地址</h4>
+        <ul class="add-address-body">
+            <li>
+                <label for="consignee" class="gray6">收货人</label>
+                <input type="text" id="consignee" placeholder="名字">
+            </li>
+            <li class="code">
+                <label for="contact_phone" class="gray6">联系电话</label>
+                <input type="tel" id="contact_phone" placeholder="手机或固话">
+            </li>
+            <li class="flex">
+                <label class="gray6">选择地区</label>
+                <span class="flex">
+                    <select id="province" name="province" class="address-province cell" data-next-type="城市" data-next="city">
+                        <option data-code="0" value="省份">选择省份</option>
+                        <option data-code="110000" value="北京市">北京市</option>
+                        <option data-code="120000" value="天津市">天津市</option>
+                        <option data-code="130000" value="河北省">河北省</option>
+                        <option data-code="140000" value="山西省">山西省</option>
+                        <option data-code="150000" value="内蒙古自治区">内蒙古自治区</option>
+                        <option data-code="210000" value="辽宁省">辽宁省</option>
+                        <option data-code="220000" value="吉林省">吉林省</option>
+                        <option data-code="230000" value="黑龙江省">黑龙江省</option>
+                        <option data-code="310000" value="上海市">上海市</option>
+                        <option data-code="320000" value="江苏省">江苏省</option>
+                        <option data-code="330000" value="浙江省">浙江省</option>
+                        <option data-code="340000" value="安徽省">安徽省</option>
+                        <option data-code="350000" value="福建省">福建省</option>
+                        <option data-code="360000" value="江西省">江西省</option>
+                        <option data-code="370000" value="山东省">山东省</option>
+                        <option data-code="410000" value="河南省">河南省</option>
+                        <option data-code="420000" value="湖北省">湖北省</option>
+                        <option data-code="430000" value="湖南省">湖南省</option>
+                        <option data-code="440000" value="广东省">广东省</option>
+                        <option data-code="450000" value="广西壮族自治区">广西壮族自治区</option>
+                        <option data-code="460000" value="海南省">海南省</option>
+                        <option data-code="500000" value="重庆市">重庆市</option>
+                        <option data-code="510000" value="四川省">四川省</option>
+                        <option data-code="520000" value="贵州省">贵州省</option>
+                        <option data-code="530000" value="云南省">云南省</option>
+                        <option data-code="540000" value="西藏自治区">西藏自治区</option>
+                        <option data-code="610000" value="陕西省">陕西省</option>
+                        <option data-code="620000" value="甘肃省">甘肃省</option>
+                        <option data-code="630000" value="青海省">青海省</option>
+                        <option data-code="640000" value="宁夏回族自治区">宁夏回族自治区</option>
+                        <option data-code="650000" value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                        <option data-code="710000" value="台湾省">台湾省</option>
+                        <option data-code="810000" value="香港特别行政区">香港特别行政区</option>
+                        <option data-code="820000" value="澳门特别行政区">澳门特别行政区</option>
+                    </select>
+                    <select id="city" name="city" class="address-city cell" data-next-type="区县" data-next="county"><option data-code="0" value="城市">选择城市</option>
+                        <option data-code="330100" value="杭州市">杭州市</option>
+                        <option data-code="330200" value="宁波市">宁波市</option>
+                        <option data-code="330300" value="温州市">温州市</option>
+                        <option data-code="330400" value="嘉兴市">嘉兴市</option>
+                        <option data-code="330500" value="湖州市">湖州市</option>
+                        <option data-code="330600" value="绍兴市">绍兴市</option>
+                        <option data-code="330700" value="金华市">金华市</option>
+                        <option data-code="330800" value="衢州市">衢州市</option>
+                        <option data-code="330900" value="舟山市">舟山市</option>
+                        <option data-code="331000" value="台州市">台州市</option>
+                        <option data-code="331100" value="丽水市">丽水市</option>
+                    </select>
+                    <select id="county" name="county" class="address-county cell"><option data-code="0" value="区县">选择区县</option>
+                        <option data-code="330102" value="上城区">上城区</option>
+                        <option data-code="330103" value="下城区">下城区</option>
+                        <option data-code="330104" value="江干区">江干区</option>
+                        <option data-code="330105" value="拱墅区">拱墅区</option>
+                        <option data-code="330106" value="西湖区">西湖区</option>
+                        <option data-code="330108" value="滨江区">滨江区</option>
+                        <option data-code="330109" value="萧山区">萧山区</option>
+                        <option data-code="330110" value="余杭区">余杭区</option>
+                        <option data-code="330122" value="桐庐县">桐庐县</option>
+                        <option data-code="330127" value="淳安县">淳安县</option>
+                        <option data-code="330182" value="建德市">建德市</option>
+                        <option data-code="330183" value="富阳市">富阳市</option>
+                        <option data-code="330185" value="临安市">临安市</option>
+                        <option data-code="330186" value="下沙区">下沙区</option>
+                        <option data-code="330199" value="其它区">其它区</option>
+                    </select>
+                </span>
+            </li>
+            <li>
+                <label for="detailed_address" class="gray6">详细地址</label>
+                <input type="text" id="detailed_address" placeholder="街道门牌信息">
+            </li>
+            <li>
+                <label for="zip_code" class="gray6">邮政编码</label>
+                <input type="text" id="zip_code" placeholder="邮政编码(选填)">
+            </li>
+        </ul>
+        <div class="add-address-footer">
+            <button type="submit" class="btn btn-green">保存</button>
+            <button type="submit" class="btn mt10">删除收货地址</button>
+        </div>
+    </form>
+</div>

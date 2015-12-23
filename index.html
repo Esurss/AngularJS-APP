@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="tiaoYaApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, address=no">
+    <link charset="utf-8" rel="stylesheet" type="text/css" href="css/app.css"/>
+    <title>tiaoya</title>
+    <base href="/">
+    <script>
+        !function () {
+            var b = null;
+
+            function a() {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 16 + "px"
+            }
+            window.addEventListener("resize", function () {
+                clearTimeout(b), b = setTimeout(a, 300)
+            }, !1), a()
+        }(window);
+    </script>
+</head>
+
+<body>
+    <div class="container" ng-view></div>
+
+    <script src="framework/angular-1.4.5/angular.min.js"></script>
+    <script src="framework/angular-1.4.5/angular-route.min.js"></script>
+    <script src="framework/angular-1.4.5/angular-resource.min.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
